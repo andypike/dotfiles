@@ -1,3 +1,9 @@
+call plug#begin('~/.vim/plugged')
+
+Plug 'chriskempson/vim-tomorrow-theme'
+
+call plug#end()
+
 set nocompatible
 set encoding=utf-8
 set number
@@ -7,5 +13,8 @@ set autoread
 set softtabstop=2
 set shiftwidth=2
 set expandtab
+set background=dark
 
 syntax enable
+
+silent! colorscheme Tomorrow-Night

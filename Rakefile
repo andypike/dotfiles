@@ -7,8 +7,8 @@ task :install do
   puts "Installing dotfiles..."
 
   backup
-  install_vim_plug
   create_symlinks
+  install_vim_plug
 end
 
 def backup
@@ -18,8 +18,8 @@ def backup
 
   symlinks.each do |symlink|
     file = File.basename(symlink, ".symlink")
-    FileUtils.rm("#{backup_path}/.#{file}")
-    FileUtils.mv("#{home}/.#{file}", "#{backup_path}/.#{file}")
+    FileUtils.rm("#{backup_path}/.#{file}") if File.exist?("#{backup_path}/.#{file}")
+    FileUtils.mv("#{home}/.#{file}", "#{backup_path}/.#{file}") if File.exist?("#{home}/.#{file}")
   end 
 end
 
@@ -36,6 +36,7 @@ def install_vim_plug
   puts "Installing vim-plug..."
 
   sh("curl -fLo #{home}/.vim/autoload/plug.vim --create-dirs http://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim")
+  sh("vim +PlugInstall +PlugClean +qall")
 end
 
 def symlinks 
