@@ -1,0 +1,11 @@
+set nocompatible
+set encoding=utf-8
+set number
+set showcmd
+set nowrap
+set autoread
+set softtabstop=2
+set shiftwidth=2
+set expandtab
+
+syntax enable
