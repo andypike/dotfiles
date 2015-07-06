@@ -1,6 +1,10 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'chriskempson/vim-tomorrow-theme'
+Plug 'sickill/vim-monokai'
+Plug 'scrooloose/nerdtree'
+Plug 'bling/vim-airline'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
@@ -12,9 +16,27 @@ set nowrap
 set autoread
 set softtabstop=2
 set shiftwidth=2
+set tabstop=2
 set expandtab
+set backspace=indent,eol,start
+set hlsearch
+set ignorecase
+set smartcase
+set incsearch
+set list
+set listchars=trail:.,nbsp:.,tab:▸\ ,extends:#
+set clipboard=unnamed
+
+set cursorline
 set background=dark
-
 syntax enable
+silent! colorscheme monokai
+highlight OverLength ctermbg=red ctermfg=white guibg=#f92672
+match OverLength /\%81v.\+/
 
-silent! colorscheme Tomorrow-Night
+let g:airline_powerline_fonts=1
+let g:airline_theme='murmur'
+let mapleader=","
+
+map <C-n> :NERDTreeToggle<CR>
+

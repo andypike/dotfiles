@@ -20,7 +20,7 @@ def backup
     file = File.basename(symlink, ".symlink")
     FileUtils.rm("#{backup_path}/.#{file}") if File.exist?("#{backup_path}/.#{file}")
     FileUtils.mv("#{home}/.#{file}", "#{backup_path}/.#{file}") if File.exist?("#{home}/.#{file}")
-  end 
+  end
 end
 
 def create_symlinks
@@ -28,7 +28,7 @@ def create_symlinks
 
   symlinks.each do |symlink|
     file = File.basename(symlink, ".symlink")
-    File.symlink("#{Dir.pwd}/#{symlink}", "#{home}/.#{file}") 
+    File.symlink("#{Dir.pwd}/#{symlink}", "#{home}/.#{file}")
   end
 end
 
@@ -39,7 +39,7 @@ def install_vim_plug
   sh("vim +PlugInstall +PlugClean +qall")
 end
 
-def symlinks 
+def symlinks
   Dir.glob("*.symlink")
 end
 
