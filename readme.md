@@ -26,6 +26,12 @@ cd ~/.vim/plugged/YouCompleteMe
 ./install.sh
 ```
 
+To enable ctags, install Exuberant Ctags:
+
+```
+brew install ctags
+```
+
 Then in iTerm2: iTerm > Preferences > General and set the load preferences
 folder to your dotfiles folder.
 

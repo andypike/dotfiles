@@ -2,13 +2,18 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'sickill/vim-monokai'
 Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdcommenter'
 Plug 'bling/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'kien/ctrlp.vim'
 Plug 'Valloric/YouCompleteMe'
+Plug 'xolox/vim-easytags'
+Plug 'xolox/vim-misc'
 
 call plug#end()
+
+filetype plugin on
 
 set nocompatible
 set encoding=utf-8
@@ -26,7 +31,7 @@ set ignorecase
 set smartcase
 set incsearch
 set list
-set listchars=trail:.,nbsp:.,tab:▸\ ,extends:#
+set listchars=trail:⋅,nbsp:⋅,tab:▸⋅,extends:#
 set clipboard=unnamed
 set noswapfile
 set nobackup
@@ -39,10 +44,18 @@ silent! colorscheme monokai
 highlight OverLength ctermbg=red ctermfg=white guibg=#f92672
 match OverLength /\%81v.\+/
 
+set tags=.tags
+let g:easytags_cmd='/usr/local/bin/ctags'
+let g:easytags_async=1
+let g:easytags_dynamic_files=2
+
 let g:airline_powerline_fonts=1
 let g:airline_theme='murmur'
+
+autocmd vimenter * NERDTree " Open NERDTree when vim starts
 
 let mapleader=","
 
 map <C-n> :NERDTreeToggle<CR>
 map <leader>f :CtrlP<cr>
+nnoremap <leader>. :CtrlPTag<cr>

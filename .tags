@@ -1,0 +1,10 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+<C-n>	/Users/andypike/code/dotfiles/vimrc.symlink	/^map <C-n> :NERDTreeToggle<CR>$/;"	m	language:Vim
+<leader>.	/Users/andypike/code/dotfiles/vimrc.symlink	/^nnoremap <leader>. :CtrlPTag<cr>$/;"	m	language:Vim
+<leader>f	/Users/andypike/code/dotfiles/vimrc.symlink	/^map <leader>f :CtrlP<cr>$/;"	m	language:Vim
+g:airline_powerline_fonts	/Users/andypike/code/dotfiles/vimrc.symlink	/^let g:airline_powerline_fonts=1$/;"	v	language:Vim
+g:airline_theme	/Users/andypike/code/dotfiles/vimrc.symlink	/^let g:airline_theme='murmur'$/;"	v	language:Vim
+g:easytags_async	/Users/andypike/code/dotfiles/vimrc.symlink	/^let g:easytags_async=1$/;"	v	language:Vim
+g:easytags_cmd	/Users/andypike/code/dotfiles/vimrc.symlink	/^let g:easytags_cmd='\/usr\/local\/bin\/ctags'$/;"	v	language:Vim
+g:easytags_dynamic_files	/Users/andypike/code/dotfiles/vimrc.symlink	/^let g:easytags_dynamic_files=2$/;"	v	language:Vim
+mapleader	/Users/andypike/code/dotfiles/vimrc.symlink	/^let mapleader=","$/;"	v	language:Vim
