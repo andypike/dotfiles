@@ -36,6 +36,7 @@ match OverLength /\%81v.\+/
 
 let g:airline_powerline_fonts=1
 let g:airline_theme='murmur'
+
 let mapleader=","
 
 map <C-n> :NERDTreeToggle<CR>
