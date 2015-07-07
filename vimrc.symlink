@@ -6,6 +6,7 @@ Plug 'bling/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'kien/ctrlp.vim'
+Plug 'Valloric/YouCompleteMe'
 
 call plug#end()
 

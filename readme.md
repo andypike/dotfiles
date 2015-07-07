@@ -18,6 +18,14 @@ cd ..
 rm -rf fonts
 ```
 
+To complete the YouCompleteMe plugin installation you will need to:
+
+```
+brew install cmake
+cd ~/.vim/plugged/YouCompleteMe
+./install.sh
+```
+
 Then in iTerm2: iTerm > Preferences > General and set the load preferences
 folder to your dotfiles folder.
 
