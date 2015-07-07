@@ -5,6 +5,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'bling/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
+Plug 'kien/ctrlp.vim'
 
 call plug#end()
 
@@ -43,4 +44,4 @@ let g:airline_theme='murmur'
 let mapleader=","
 
 map <C-n> :NERDTreeToggle<CR>
-
+map <leader>f :CtrlP<cr>
