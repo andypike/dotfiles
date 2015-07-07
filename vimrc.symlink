@@ -26,6 +26,9 @@ set incsearch
 set list
 set listchars=trail:.,nbsp:.,tab:▸\ ,extends:#
 set clipboard=unnamed
+set noswapfile
+set nobackup
+set nowritebackup
 
 set cursorline
 set background=dark
