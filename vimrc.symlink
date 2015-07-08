@@ -10,6 +10,7 @@ Plug 'kien/ctrlp.vim'
 Plug 'Valloric/YouCompleteMe'
 Plug 'xolox/vim-easytags'
 Plug 'xolox/vim-misc'
+Plug 'terryma/vim-multiple-cursors'
 
 call plug#end()
 
@@ -36,6 +37,7 @@ set clipboard=unnamed
 set noswapfile
 set nobackup
 set nowritebackup
+set visualbell
 
 set cursorline
 set background=dark
@@ -56,6 +58,6 @@ autocmd vimenter * NERDTree " Open NERDTree when vim starts
 
 let mapleader=","
 
-map <C-n> :NERDTreeToggle<CR>
+map <leader>n :NERDTreeToggle<CR>
 map <leader>f :CtrlP<cr>
 nnoremap <leader>. :CtrlPTag<cr>
