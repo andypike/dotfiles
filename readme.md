@@ -18,7 +18,7 @@ cd ..
 rm -rf fonts
 ```
 
-To complete the YouCompleteMe plugin installation you will need to:
+To complete the YouCompleteMe plugin installation:
 
 ```
 brew install cmake
@@ -30,6 +30,12 @@ To enable ctags, install Exuberant Ctags:
 
 ```
 brew install ctags
+```
+
+To complete the Ack plugin installation:
+
+```
+brew install the_silver_searcher
 ```
 
 Then in iTerm2: iTerm > Preferences > General and set the load preferences
