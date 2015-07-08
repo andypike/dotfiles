@@ -56,14 +56,15 @@ let g:airline_theme='murmur'
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#buffer_nr_show=1
 
-autocmd vimenter * NERDTree
-
 let mapleader=","
 
 nmap <leader>, :e#<cr>
 map <leader>n :NERDTreeToggle<cr>
 map <leader>f :CtrlP<cr>
 nnoremap <leader>. :CtrlPTag<cr>
+
+" Open nerdtree on startup
+autocmd vimenter * NERDTree
 
 " Clean trailing whitespace on save
 autocmd BufWritePre * call StripTrailingWhite()
