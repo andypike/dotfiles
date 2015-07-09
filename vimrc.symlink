@@ -3,6 +3,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'sickill/vim-monokai'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/syntastic'
 Plug 'bling/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
@@ -58,6 +59,12 @@ let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#buffer_nr_show=1
 
 let g:ackprg='ag --nogroup --nocolor --column'
+
+let g:syntastic_ruby_checkers = ['rubocop']
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 let mapleader=","
 
