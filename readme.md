@@ -38,10 +38,13 @@ To complete the Ack plugin installation:
 brew install the_silver_searcher
 ```
 
+Upgrade Vim to 7.4 with:
+
+```
+brew install vim
+```
+
 Then in iTerm2: iTerm > Preferences > General and set the load preferences
 folder to your dotfiles folder.
 
-Upgrade Vim to 7.4 with `brew install vim` then check the version with
-`vim --version`. If it reports an older version than 7.4 either alter your path
-or rename the system Vim: `which vim` to check the location then:
-`sudo mv /usr/bin/vim /usr/bin/vim73`.
+
