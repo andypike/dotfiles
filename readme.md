@@ -44,6 +44,12 @@ Upgrade Vim to 7.4 with:
 brew install vim
 ```
 
+To keep spec runs within Vim, install tmux:
+
+```
+brew install tmux
+```
+
 Then in iTerm2: iTerm > Preferences > General and set the load preferences
 folder to your dotfiles folder.
 
