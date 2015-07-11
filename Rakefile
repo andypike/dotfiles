@@ -17,9 +17,12 @@ def backup
   Dir.mkdir(backup_path) unless Dir.exist?(backup_path)
 
   symlinks.each do |symlink|
-    file = File.basename(symlink, ".symlink")
-    FileUtils.rm("#{backup_path}/.#{file}") if File.exist?("#{backup_path}/.#{file}")
-    FileUtils.mv("#{home}/.#{file}", "#{backup_path}/.#{file}") if File.exist?("#{home}/.#{file}")
+    file        = File.basename(symlink, ".symlink")
+    backup_file = "#{backup_path}/.#{file}"
+    config_file = "#{home}/.#{file}"
+
+    FileUtils.rm(backup_file) if File.exist?(backup_file)
+    FileUtils.mv(config_file, backup_file) if File.exist?(config_file)
   end
 end
 

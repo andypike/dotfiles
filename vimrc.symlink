@@ -8,6 +8,8 @@ Plug 'bling/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-surround'
 Plug 'kien/ctrlp.vim'
 Plug 'Valloric/YouCompleteMe'
 Plug 'xolox/vim-easytags'
@@ -15,6 +17,9 @@ Plug 'xolox/vim-misc'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'mileszs/ack.vim'
 Plug 'thoughtbot/vim-rspec'
+Plug 'godlygeek/tabular'
+Plug 'slim-template/vim-slim'
+Plug 'kchmck/vim-coffee-script'
 
 call plug#end()
 
