@@ -1,0 +1,11 @@
+[alias]
+	conflicts = diff --name-only --diff-filter=U
+[user]
+	name = Andy Pike
+	email = andy@andypike.com
+[push]
+	default = matching
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
