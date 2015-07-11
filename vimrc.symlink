@@ -52,7 +52,7 @@ set cursorline
 set background=dark
 syntax enable
 silent! colorscheme monokai
-highlight OverLength ctermbg=red ctermfg=white guibg=#f92672
+highlight OverLength ctermbg=0 ctermfg=15
 match OverLength /\%81v.\+/
 
 set tags=.tags
