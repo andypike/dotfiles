@@ -45,8 +45,10 @@ plugins=(git bundler)
 source $ZSH/oh-my-zsh.sh
 
 . ~/.nvm/nvm.sh
-
 alias mocha="mocha --harmony_classes"
+
+export VISUAL=vim
+export EDITOR="$VISUAL"
 
 # export PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export PATH=/usr/local/bin:$PATH

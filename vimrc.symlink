@@ -73,6 +73,8 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+let g:ctrlp_show_hidden = 1
+
 let mapleader=","
 
 nmap <leader>, :e#<cr>
@@ -88,8 +90,9 @@ map <Leader>a :call RunAllSpecs()<CR>
 
 let g:rspec_command = "Dispatch bundle exec bin/rspec {spec}"
 
-" Open nerdtree on startup
-autocmd vimenter * NERDTree
+" Enable spell checking in markdown files and git commit messages.
+autocmd BufRead,BufNewFile *.md setlocal spell
+autocmd FileType gitcommit setlocal spell
 
 " Clean trailing whitespace on save
 autocmd BufWritePre * call StripTrailingWhite()
