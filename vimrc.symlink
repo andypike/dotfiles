@@ -10,6 +10,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-endwise'
 Plug 'kien/ctrlp.vim'
 Plug 'Valloric/YouCompleteMe'
 Plug 'xolox/vim-easytags'
@@ -20,6 +21,7 @@ Plug 'thoughtbot/vim-rspec'
 Plug 'godlygeek/tabular'
 Plug 'slim-template/vim-slim'
 Plug 'kchmck/vim-coffee-script'
+Plug 'schickling/vim-bufonly'
 
 call plug#end()
 
@@ -75,11 +77,15 @@ let g:syntastic_check_on_wq = 0
 
 let g:ctrlp_show_hidden = 1
 
+let NERDTreeShowHidden=1
+let NERDTreeIgnore=['\.DS_Store$', '\.vim$']
+
 let mapleader=","
 
 nmap <leader>, :e#<cr>
 map  <leader>n :NERDTreeToggle<cr>
 map  <leader>f :CtrlP<cr>
+map  <leader>x :BufOnly<cr>
 nnoremap <leader>. :CtrlPTag<cr>
 nnoremap K :Ack! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
