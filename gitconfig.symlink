@@ -1,13 +1,15 @@
 [alias]
-	conflicts = diff --name-only --diff-filter=U
+  conflicts = diff --name-only --diff-filter=U
 [user]
-	name = Andy Pike
-	email = andy@andypike.com
+  name = Andy Pike
+  email = andy@andypike.com
 [push]
-	default = matching
+  default = matching
 [filter "hawser"]
-	clean = git hawser clean %f
-	smudge = git hawser smudge %f
-	required = true
+  clean = git hawser clean %f
+  smudge = git hawser smudge %f
+  required = true
 [core]
-	editor = vim
+  editor = vim
+[commit]
+  template = ~/.gitmessage
