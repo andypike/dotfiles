@@ -46,6 +46,7 @@ source $ZSH/oh-my-zsh.sh
 
 . ~/.nvm/nvm.sh
 alias mocha="mocha --harmony_classes"
+alias snginx="sudo /usr/local/bin/nginx"
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
