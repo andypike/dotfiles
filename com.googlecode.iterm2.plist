@@ -832,7 +832,7 @@
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
-			<string>~/code/personal</string>
+			<string>~/code</string>
 		</dict>
 	</array>
 	<key>NoSyncTimeOfLastPromo</key>
