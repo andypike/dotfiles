@@ -48,3 +48,7 @@ alias snginx="sudo /usr/local/bin/nginx"
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
+
+if [[ -f ~/.zshlocal && -r ~/.zshlocal ]]; then
+  source ~/.zshlocal
+fi
