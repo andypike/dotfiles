@@ -48,5 +48,3 @@ alias snginx="sudo /usr/local/bin/nginx"
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
-
-export PATH=/usr/local/bin:$PATH
