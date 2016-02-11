@@ -45,6 +45,7 @@ plugins=(git bundler chruby)
 source $ZSH/oh-my-zsh.sh
 
 alias snginx="sudo /usr/local/bin/nginx"
+alias r="bundle exec rspec"
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
@@ -52,3 +53,6 @@ export EDITOR="$VISUAL"
 if [[ -f ~/.zshlocal && -r ~/.zshlocal ]]; then
   source ~/.zshlocal
 fi
+
+export NVM_DIR="/Users/andypike/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
