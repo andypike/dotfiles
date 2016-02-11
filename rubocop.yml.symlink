@@ -21,7 +21,7 @@ Style/AlignParameters:
 Style/IndentationWidth:
   Width: 2
 
-Style/SingleSpaceBeforeFirstArg:
+Style/SpaceBeforeFirstArg:
   Exclude:
     - spec/factories/**/*
     - spec/features/**/*
