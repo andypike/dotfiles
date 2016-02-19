@@ -18,6 +18,9 @@ Style/StringLiterals:
 Style/AlignParameters:
   EnforcedStyle: with_fixed_indentation
 
+Style/MultilineOperationIndentation:
+  EnforcedStyle: indented
+
 Style/IndentationWidth:
   Width: 2
 
